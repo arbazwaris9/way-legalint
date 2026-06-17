@@ -86,36 +86,72 @@ export default function Contact() {
             </AnimatedBlock>
           </div>
           <AnimatedBlock delay="animate-delay-300">
-            <div className="bg-gradient-to-br from-[#1a2332] to-[#2a3f5f] p-8 rounded-lg text-white hover:shadow-2xl transition-shadow duration-500">
-              <h3 className="text-2xl font-heading mb-6">Why Choose WAY Legal</h3>
-              <ul className="space-y-4">
-                <li className="flex items-start space-x-3 group">
-                  <span className="text-[#d4af37] mt-1 transition-transform duration-300 group-hover:translate-x-1">•</span>
-                  <span>Three generations of legal expertise and excellence</span>
-                </li>
-                <li className="flex items-start space-x-3 group">
-                  <span className="text-[#d4af37] mt-1 transition-transform duration-300 group-hover:translate-x-1">•</span>
-                  <span>Specialized in Criminal Litigation with exceptional success rate</span>
-                </li>
-                <li className="flex items-start space-x-3 group">
-                  <span className="text-[#d4af37] mt-1 transition-transform duration-300 group-hover:translate-x-1">•</span>
-                  <span>Dedicated clientele with satisfactory results</span>
-                </li>
-                <li className="flex items-start space-x-3 group">
-                  <span className="text-[#d4af37] mt-1 transition-transform duration-300 group-hover:translate-x-1">•</span>
-                  <span>7+ years of proven experience</span>
-                </li>
-                <li className="flex items-start space-x-3 group">
-                  <span className="text-[#d4af37] mt-1 transition-transform duration-300 group-hover:translate-x-1">•</span>
-                  <span>Services available across all of India</span>
-                </li>
-                <li className="flex items-start space-x-3 group">
-                  <span className="text-[#d4af37] mt-1 transition-transform duration-300 group-hover:translate-x-1">•</span>
-                  <span>Based in Mumbai with comprehensive legal coverage</span>
-                </li>
-              </ul>
-            </div>
-          </AnimatedBlock>
+  <div className="bg-white p-8 rounded-lg shadow-lg border">
+    <h3 className="text-2xl font-heading text-[#1a2332] mb-6">
+      Request a Consultation
+    </h3>
+
+    <form
+      name="contact"
+      method="POST"
+      data-netlify="true"
+      className="space-y-4"
+    >
+      <input type="hidden" name="form-name" value="contact" />
+
+      <input
+        type="text"
+        name="name"
+        placeholder="Full Name"
+        required
+        className="w-full border p-3 rounded"
+      />
+
+      <input
+        type="email"
+        name="email"
+        placeholder="Email Address"
+        required
+        className="w-full border p-3 rounded"
+      />
+
+      <input
+        type="tel"
+        name="phone"
+        placeholder="Phone Number"
+        className="w-full border p-3 rounded"
+      />
+
+      <select
+        name="matter"
+        className="w-full border p-3 rounded"
+      >
+        <option value="">Select Matter Type</option>
+        <option>Criminal Litigation</option>
+        <option>Constitutional Law</option>
+        <option>Animal Law</option>
+        <option>Civil Dispute</option>
+        <option>Corporate Advisory</option>
+        <option>Other</option>
+      </select>
+
+      <textarea
+        name="message"
+        rows={5}
+        placeholder="Briefly describe your matter"
+        required
+        className="w-full border p-3 rounded"
+      />
+
+      <button
+        type="submit"
+        className="bg-[#d4af37] text-white px-6 py-3 rounded hover:opacity-90"
+      >
+        Submit Inquiry
+      </button>
+    </form>
+  </div>
+</AnimatedBlock>
         </div>
       </div>
     </section>
