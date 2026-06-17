@@ -1,3 +1,3 @@
-# way-legalint
+# WAY Legal International
 
-[![Open in Bolt](https://bolt.new/static/open-in-bolt.svg)](https://bolt.new/~/sb1-ayswjwnj)
+Official website repository for WAY Legal International.
