@@ -92,12 +92,11 @@ export default function Contact() {
     </h3>
 
     <form
-      name="contact"
-      method="POST"
-      data-netlify="true"
-      className="space-y-4"
-    >
-      <input type="hidden" name="form-name" value="contact" />
+  name="contact"
+  method="POST"
+  data-netlify="true"
+>
+  <input type="hidden" name="form-name" value="contact" />
 
       <input
         type="text"
