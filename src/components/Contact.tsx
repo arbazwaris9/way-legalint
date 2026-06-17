@@ -85,8 +85,7 @@ export default function Contact() {
               </div>
             </AnimatedBlock>
           </div>
-          <AnimatedBlock delay="animate-delay-300">
-  <div className="bg-white p-8 rounded-lg shadow-lg border">
+         <div className="bg-white p-8 rounded-lg shadow-lg border animate-fade-in-up animate-delay-300">
     <h3 className="text-2xl font-heading text-[#1a2332] mb-6">
       Request a Consultation
     </h3>
