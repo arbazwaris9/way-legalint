@@ -65,7 +65,22 @@ export default function Contact() {
                     <a href="tel:02222644576" className="hover:text-[#d4af37] transition-colors">022-22644576</a><br />
                     <a href="tel:+919833499354" className="hover:text-[#d4af37] transition-colors">+91 9833499354</a><br />
                     <a href="tel:+919021749766" className="hover:text-[#d4af37] transition-colors">+91 9021749766</a>
-                  </p>
+                  </p><AnimatedBlock delay="animate-delay-300">
+  <div className="flex items-start space-x-4 group">
+    <Mail className="w-6 h-6 text-[#d4af37] mt-1 flex-shrink-0 transition-transform duration-300 group-hover:scale-110" />
+    <div>
+      <h3 className="text-lg font-heading text-[#1a2332] mb-2">Email</h3>
+      <p className="text-gray-600 leading-relaxed">
+        <a
+          href="mailto:admin@waylegalinternational.com"
+          className="hover:text-[#d4af37] transition-colors"
+        >
+          admin@waylegalinternational.com
+        </a>
+      </p>
+    </div>
+  </div>
+</AnimatedBlock>
                 </div>
               </div>
             </AnimatedBlock>
